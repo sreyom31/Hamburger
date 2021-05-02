@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background: rgba(0, 0, 0, 0.5) url('bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.navbar{
+    display: flex;
+}
+.leftNav{
+    display: flex;
+    /* border: 2px solid yellow; */
+    width: 70%;
+    /* padding-left: 200px; */
+    justify-content: center;
+}
+.logo{
+    /* border: 2px solid red; */
+    margin-left: 10px;
+    padding: 9px;
+    padding-bottom: 0px;
+}
+.logo img{
+    height: 50px;
+}
+.nav-lists{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.nav-lists li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.nav-lists li a{
+    text-decoration: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-lists li a:hover{
+    color: rgb(250, 151, 140);
+}
+.rightNav{
+    /* border: 2px solid black; */
+    width: 30%;
+}
+.right-nav-cont{
+    position: absolute;
+    right: 70px;
+    top: 22px;
+}
+.search{
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+.search-btn{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home-pg{
+    display: flex;
+    width: 1000px;
+    /* border: 4px solid red; */
+    margin: auto;
+    align-items: center;
+}
+.home-img img{
+    height: 200px;
+    border: 2px solid white;
+}
+.home-cont{
+    margin-left: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    text-align: center;
+}
+.home-cont p{
+    font-size: 1.2rem;
+}
+
+
+.burger{
+    /* margin: 25px 5px; */
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 3px;
+}
+
+
+@media only screen and (max-width:1140px) {
+    .logo{
+        padding-left: 25px;
+    }
+    .rightNav{
+        display: none;
+    }
+    .leftNav{
+        flex-direction: column;
+    }
+    .nav-lists{
+        flex-direction: column;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 52px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .home-pg{
+        flex-direction: column;
+    }
+}
